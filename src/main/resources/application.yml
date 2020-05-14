@@ -1,0 +1,22 @@
+server:
+  host: localhost
+  port: 8080
+spring:
+  kafka:
+    consumer:
+      bootstrap:
+        servers: 127.0.0.1:9092
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: customer-group
+    producer:
+      bootstrap:
+        servers: 127.0.0.1:9092
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      client-id: customer-client
+    template:
+      default-topic: customers
+
+swagger:
+  enabled: false

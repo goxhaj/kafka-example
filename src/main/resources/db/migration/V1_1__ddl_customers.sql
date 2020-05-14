@@ -1,0 +1,4 @@
+CREATE TABLE CUSTOMERS(
+    id BIGSERIAL PRIMARY KEY,
+    name varchar(255) not NULL
+);
