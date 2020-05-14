@@ -12,7 +12,7 @@ and unzip into a folder named "kafka" then perfom next steps.
 ## Start a consumer with a topic "test"
 ➜  kafka bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
 
-#Start the app throught:
+#Start the app
 mvn spring-boot:run
 
 #Swagger
